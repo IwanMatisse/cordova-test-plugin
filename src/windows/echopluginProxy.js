@@ -8,14 +8,9 @@
         }
     }
 });*/
-module.export = { 
+module.exports = { 
 	getValue: function (win, fail, args) {
 		console.log("ESTT TTSTST TS T ST T STTTTTTT");
-		win(777);
-	};
-	
-	testU: function (win, fail, args) {
-		console.log("ESTT TTSTST TS T ST T STTTTTTT2222");
-	};
+	}
 };
 require('cordova/exec/proxy').add('Echoplugin', module.exports);
