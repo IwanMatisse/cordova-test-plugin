@@ -1,0 +1,25 @@
+{
+  "name": "echoplugin",
+  "version": "0.1.0",
+  "description": "test plugin",
+  "cordova": {
+    "id": "echoplugin",
+    "platforms": [
+      "windows"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IwanMatisse/cordova-test-plugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-windows"
+  ],
+  "author": "Iwan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IwanMatisse/cordova-test-plugin/issues"
+  },
+  "homepage": "https://github.com/IwanMatisse/cordova-test-plugin#readme"
+}
