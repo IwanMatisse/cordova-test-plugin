@@ -1,9 +1,9 @@
 {
-  "name": "echoplugin",
-  "version": "0.1.0",
-  "description": "test plugin",
+  "name": "cordova-plugin-ik-usb",
+  "version": "0.2.0",
+  "description": "",
   "cordova": {
-    "id": "echoplugin",
+    "id": "cordova-plugin-ik-usb",
     "platforms": [
       "windows"
     ]
@@ -16,7 +16,7 @@
     "ecosystem:cordova",
     "cordova-windows"
   ],
-  "author": "Iwan",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/IwanMatisse/cordova-test-plugin/issues"
