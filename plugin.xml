@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="echoplugin"
     version="0.1.0">
-
+	<name>Echoplugin<name>
     <js-module src="www/echoplugin.js" name="echoplugin">
         <clobbers target="window.echoplugin" />
     </js-module>
