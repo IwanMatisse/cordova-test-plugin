@@ -1,4 +1,4 @@
-cordova.commandProxy.add("Echo",{
+/*cordova.commandProxy.add("Echo",{
     echo:function(successCallback,errorCallback,strInput) {
         if(!strInput || !strInput.length) {
             errorCallback("Error, something was wrong with the input string. =>" + strInput);
@@ -7,4 +7,15 @@ cordova.commandProxy.add("Echo",{
             successCallback(strInput + "echo");
         }
     }
-});
+});*/
+module.export = { 
+	getValue: function (win, fail, args) {
+		console.log("ESTT TTSTST TS T ST T STTTTTTT");
+		win(777);
+	}
+	
+	testU: function (win, fail, args) {
+		console.log("ESTT TTSTST TS T ST T STTTTTTT");
+	}
+};
+require('cordova/exec/proxy').add('Echoplugin', module.exports);
