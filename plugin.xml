@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="echoplugin"
+    version="0.1.0">
+
+    <js-module src="www/echoplugin.js" name="echoplugin">
+        <clobbers target="window.echoplugin" />
+    </js-module>
+
+    <!-- windows -->
+    <platform name="windows">
+        <js-module src="src/windows/echopluginProxy.js" name="EchoProxy">
+            <merges target="" />
+        </js-module>
+    </platform>
+
+    <!-- other platforms -->
+
+</plugin>
