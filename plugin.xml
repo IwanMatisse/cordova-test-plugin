@@ -4,7 +4,7 @@
     version="0.2.0">
 	<name>Echoplugin</name>
     <js-module src="www/echoplugin.js" name="echoplugin">
-        <clobbers target="window.echoplugin" />
+        <clobbers target="echoplugin" />
     </js-module>
 
     <!-- windows -->
