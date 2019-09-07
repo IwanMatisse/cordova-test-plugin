@@ -11,7 +11,7 @@
 module.exports = { 
 	getValue: function (successCallback, errorCallback, args) {
 		console.log("ESTT TTSTST TS T ST T STTTTTTT");
-		var res = await usbRC.USB.getDeviceList();
+		var res = usbRC.USB.getDeviceList().getResults();
 		if(res.indexOf("Error") == 0) {
             errorCallback(res);
         }
