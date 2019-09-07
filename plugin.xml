@@ -12,6 +12,7 @@
         <js-module src="src/windows/echopluginProxy.js" name="EchoProxy">
             <merges target="" />
         </js-module>
+		<framework src="src/windows/usbRC.winmd" />
     </platform>
 
     <!-- other platforms -->

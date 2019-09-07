@@ -9,8 +9,15 @@
     }
 });*/
 module.exports = { 
-	getValue: function (win, fail, args) {
+	getValue: function (successCallback, errorCallback, args) {
 		console.log("ESTT TTSTST TS T ST T STTTTTTT");
+		var res = usbRC.USB.GetDeviceList();
+		if(res.indexOf("Error") == 0) {
+            errorCallback(res);
+        }
+        else {
+            successCallback(res);
+        }
 	}
 };
 require('cordova/exec/proxy').add('Echoplugin', module.exports);
