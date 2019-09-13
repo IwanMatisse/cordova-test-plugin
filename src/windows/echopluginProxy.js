@@ -11,13 +11,15 @@
 module.exports = { 
 	getValue: function (successCallback, errorCallback, args) {
 		console.log("ESTT TTSTST TS T ST T STTTTTTT");
-		var res = usbRC.USB.getDeviceList().getResults();
-		if(res.indexOf("Error") == 0) {
-            errorCallback(res);
-        }
-        else {
-            successCallback(res);
-        }
+		var operation = usbRC.USB.getDeviceList();
+		operation.done((results) => {
+		  if (results.indexOf("Error") == 0) {
+			errorCallback(results);
+		  }
+		  else {
+			successCallback(results);
+		  }
+		});
 	}
 };
 require('cordova/exec/proxy').add('Echoplugin', module.exports);
